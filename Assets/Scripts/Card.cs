@@ -27,6 +27,10 @@ public class Card : MonoBehaviour
 
     private HandController theHC;
 
+    //particles
+    [SerializeField] private GameObject hoverParticlePrefab;
+    private GameObject hoverParticleInstance;
+
     void Start()
     {
         SetupCard();
@@ -71,13 +75,29 @@ public class Card : MonoBehaviour
         if (inHand)
         {
             MoveToPoint(theHC.cardPositions[handPosition] + new Vector3(0f, 1f, .5f), Quaternion.identity);
+
+            //particles
+            if (hoverParticleInstance == null && hoverParticlePrefab != null)
+            {
+                hoverParticleInstance = Instantiate(hoverParticlePrefab, transform);
+                hoverParticleInstance.transform.localPosition = Vector3.zero; // or tweak for best placement
+            }
         }
     }
+
     private void OnMouseExit()
     {
         if (inHand)
         {
             MoveToPoint(theHC.cardPositions[handPosition], theHC.minPos.rotation);
+
+            //particles
+            if (hoverParticleInstance != null)
+            {
+                Destroy(hoverParticleInstance);
+                hoverParticleInstance = null;
+            }
         }
     }
+
 }
