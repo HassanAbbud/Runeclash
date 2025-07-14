@@ -25,9 +25,13 @@ public class Card : MonoBehaviour
     public bool inHand;
     public int handPosition;
 
+    private HandController theHC;
+
     void Start()
     {
         SetupCard();
+
+        theHC = FindFirstObjectByType<HandController>();
     }
 
     public void SetupCard()
@@ -60,5 +64,20 @@ public class Card : MonoBehaviour
     {
         targetPoint = pointToMoveTo;
         targetRot = rotToMatch;
+    }
+
+    private void OnMouseOver()
+    {
+        if (inHand)
+        {
+            MoveToPoint(theHC.cardPositions[handPosition] + new Vector3(0f, 1f, .5f), Quaternion.identity);
+        }
+    }
+    private void OnMouseExit()
+    {
+        if (inHand)
+        {
+            MoveToPoint(theHC.cardPositions[handPosition], theHC.minPos.rotation);
+        }
     }
 }
