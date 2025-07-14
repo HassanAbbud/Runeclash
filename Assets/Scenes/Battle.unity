@@ -323,7 +323,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8007e66c0efa3914ba7d657752123dd3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cardSO: {fileID: 11400000, guid: 8a79b5a41a038dc4ca1bd8a8bd921dd5, type: 2}
+  cardSO: {fileID: 11400000, guid: a7aaf8f284ef6a04d8091a018485ee28, type: 2}
   attackPower: 5
   currentHealth: 10
   manaCost: 2
@@ -4415,10 +4415,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 505868005559086061, guid: efea2424be468554f8688c9668e91827, type: 3}
-      propertyPath: m_MaxParticleSize
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 1866665547323797014, guid: efea2424be468554f8688c9668e91827, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -4457,74 +4453,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1866665547323797014, guid: efea2424be468554f8688c9668e91827, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5853200159790714497, guid: efea2424be468554f8688c9668e91827, type: 3}
-      propertyPath: looping
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5853200159790714497, guid: efea2424be468554f8688c9668e91827, type: 3}
-      propertyPath: ShapeModule.type
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 5853200159790714497, guid: efea2424be468554f8688c9668e91827, type: 3}
-      propertyPath: ShapeModule.m_Scale.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5853200159790714497, guid: efea2424be468554f8688c9668e91827, type: 3}
-      propertyPath: ShapeModule.m_Scale.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5853200159790714497, guid: efea2424be468554f8688c9668e91827, type: 3}
-      propertyPath: ShapeModule.m_Scale.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5853200159790714497, guid: efea2424be468554f8688c9668e91827, type: 3}
-      propertyPath: InitialModule.rotation3D
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5853200159790714497, guid: efea2424be468554f8688c9668e91827, type: 3}
-      propertyPath: InitialModule.gravitySource
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5853200159790714497, guid: efea2424be468554f8688c9668e91827, type: 3}
-      propertyPath: InitialModule.startSize.scalar
-      value: 0.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 5853200159790714497, guid: efea2424be468554f8688c9668e91827, type: 3}
-      propertyPath: InitialModule.startSpeed.scalar
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5853200159790714497, guid: efea2424be468554f8688c9668e91827, type: 3}
-      propertyPath: InitialModule.startLifetime.scalar
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 5853200159790714497, guid: efea2424be468554f8688c9668e91827, type: 3}
-      propertyPath: InitialModule.startRotation.scalar
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5853200159790714497, guid: efea2424be468554f8688c9668e91827, type: 3}
-      propertyPath: InitialModule.startColor.maxColor.b
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5853200159790714497, guid: efea2424be468554f8688c9668e91827, type: 3}
-      propertyPath: InitialModule.startColor.maxColor.g
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5853200159790714497, guid: efea2424be468554f8688c9668e91827, type: 3}
-      propertyPath: InitialModule.startColor.maxColor.r
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5853200159790714497, guid: efea2424be468554f8688c9668e91827, type: 3}
-      propertyPath: InitialModule.startRotationX.scalar
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5853200159790714497, guid: efea2424be468554f8688c9668e91827, type: 3}
-      propertyPath: InitialModule.startRotationY.scalar
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5853200159790714497, guid: efea2424be468554f8688c9668e91827, type: 3}
-      propertyPath: ShapeModule.m_TextureBilinearFiltering
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7835268327309405961, guid: efea2424be468554f8688c9668e91827, type: 3}
